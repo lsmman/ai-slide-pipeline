@@ -1,0 +1,6 @@
+node_modules/
+*.png
+*.pdf
+*.pptx
+__pycache__/
+.venv/
