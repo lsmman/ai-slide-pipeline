@@ -1,0 +1,9 @@
+{
+  "_note": "hex 값에 # 없이 6자리. pptxgenjs/chrome.css 양쪽에서 사용. 기본값 upstage-lavender (디자인 시스템).",
+  "midnight-executive": { "primary": "1E2761", "secondary": "CADCFC", "accent": "FFFFFF", "bg": "0F1547" },
+  "coral-energy":       { "primary": "F96167", "secondary": "2F3C7E", "accent": "F9E795", "bg": "FFFFFF" },
+  "forest-moss":        { "primary": "2C5F2D", "secondary": "97BC62", "accent": "F5F5F5", "bg": "FAFAFA" },
+  "teal-trust":         { "primary": "028090", "secondary": "02C39A", "accent": "FFFFFF", "bg": "F0FAFA" },
+  "charcoal-minimal":   { "primary": "36454F", "secondary": "212121", "accent": "F2F2F2", "bg": "FFFFFF" },
+  "upstage-lavender":   { "primary": "6366F1", "secondary": "E8E9FF", "accent": "312E81", "bg": "F4F4FF" }
+}
