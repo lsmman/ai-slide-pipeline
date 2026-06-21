@@ -1,0 +1,78 @@
+{
+  "image": "p15.png",
+  "regions": [
+    {
+      "id": 0,
+      "box": [
+        90,
+        70,
+        700,
+        44
+      ],
+      "area": 30800,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 1,
+      "box": [
+        120,
+        160,
+        1600,
+        100
+      ],
+      "area": 160000,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 2,
+      "box": [
+        120,
+        320,
+        1680,
+        64
+      ],
+      "area": 107520,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 3,
+      "box": [
+        120,
+        400,
+        1680,
+        64
+      ],
+      "area": 107520,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 4,
+      "box": [
+        120,
+        480,
+        1680,
+        64
+      ],
+      "area": 107520,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 5,
+      "box": [
+        120,
+        600,
+        1680,
+        160
+      ],
+      "area": 268800,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    }
+  ],
+  "sam": false
+}

@@ -1,0 +1,1383 @@
+{
+  "deck": "decks/steelops-capstone",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "slides": [
+    {
+      "id": "p01",
+      "png": "p01.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "lockup",
+          "box": [
+            1480,
+            78,
+            360,
+            50
+          ],
+          "contentH": 50,
+          "declaredH": 50,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            360,
+            1400,
+            150
+          ],
+          "contentH": 150,
+          "declaredH": 150,
+          "overflow": false
+        },
+        {
+          "role": "subtitle",
+          "box": [
+            120,
+            540,
+            1400,
+            80
+          ],
+          "contentH": 80,
+          "declaredH": 80,
+          "overflow": false
+        },
+        {
+          "role": "caption",
+          "box": [
+            120,
+            650,
+            1500,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "png": "p02.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            150,
+            1000,
+            110
+          ],
+          "contentH": 110,
+          "declaredH": 110,
+          "overflow": false
+        },
+        {
+          "role": "number",
+          "box": [
+            140,
+            360,
+            110,
+            110
+          ],
+          "contentH": 110,
+          "declaredH": 110,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            300,
+            380,
+            1450,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        },
+        {
+          "role": "number",
+          "box": [
+            140,
+            500,
+            110,
+            110
+          ],
+          "contentH": 110,
+          "declaredH": 110,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            300,
+            520,
+            1450,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        },
+        {
+          "role": "number",
+          "box": [
+            140,
+            640,
+            110,
+            110
+          ],
+          "contentH": 110,
+          "declaredH": 110,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            300,
+            660,
+            1450,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        },
+        {
+          "role": "number",
+          "box": [
+            140,
+            780,
+            110,
+            110
+          ],
+          "contentH": 110,
+          "declaredH": 110,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            300,
+            800,
+            1450,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "png": "p03.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            1680,
+            240
+          ],
+          "contentH": 240,
+          "declaredH": 240,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            620,
+            1680,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            700,
+            1680,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "png": "p04.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            300,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            372,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            444,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            560,
+            1680,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "png": "p05.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            1680,
+            160
+          ],
+          "contentH": 160,
+          "declaredH": 160,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            520,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            592,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            664,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "png": "p06.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            320,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            560,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            560,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "png": "p07.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            300,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            372,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            444,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            516,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            588,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            660,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            732,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "png": "p08.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            540,
+            420
+          ],
+          "contentH": 420,
+          "declaredH": 420,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            690,
+            320,
+            540,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            690,
+            540,
+            540,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            1260,
+            320,
+            540,
+            420
+          ],
+          "contentH": 420,
+          "declaredH": 420,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "png": "p09.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            690,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            1260,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "png": "p10.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            330,
+            820,
+            400
+          ],
+          "contentH": 400,
+          "declaredH": 400,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            330,
+            820,
+            400
+          ],
+          "contentH": 400,
+          "declaredH": 400,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "png": "p11.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            330,
+            820,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            330,
+            820,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "png": "p12.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            330,
+            820,
+            400
+          ],
+          "contentH": 400,
+          "declaredH": 400,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            330,
+            820,
+            400
+          ],
+          "contentH": 400,
+          "declaredH": 400,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "png": "p13.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            690,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            1260,
+            330,
+            540,
+            360
+          ],
+          "contentH": 360,
+          "declaredH": 360,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "png": "p14.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            150,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            300,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            372,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            480,
+            1680,
+            280
+          ],
+          "contentH": 280,
+          "declaredH": 280,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p15",
+      "png": "p15.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            320,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            400,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "step",
+          "box": [
+            120,
+            480,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            600,
+            1680,
+            160
+          ],
+          "contentH": 160,
+          "declaredH": 160,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p16",
+      "png": "p16.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            320,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            560,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            980,
+            560,
+            820,
+            200
+          ],
+          "contentH": 200,
+          "declaredH": 200,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p17",
+      "png": "p17.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "crumb",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "contentH": 44,
+          "declaredH": 44,
+          "overflow": false
+        },
+        {
+          "role": "title",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "contentH": 100,
+          "declaredH": 100,
+          "overflow": false
+        },
+        {
+          "role": "card",
+          "box": [
+            120,
+            320,
+            1680,
+            130
+          ],
+          "contentH": 130,
+          "declaredH": 130,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            480,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            552,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            624,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        },
+        {
+          "role": "body",
+          "box": [
+            120,
+            696,
+            1680,
+            64
+          ],
+          "contentH": 64,
+          "declaredH": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "p18",
+      "png": "p18.png",
+      "overflow": false,
+      "elements": [
+        {
+          "role": "title",
+          "box": [
+            120,
+            410,
+            1680,
+            190
+          ],
+          "contentH": 190,
+          "declaredH": 190,
+          "overflow": false
+        },
+        {
+          "role": "subtitle",
+          "box": [
+            120,
+            590,
+            1680,
+            70
+          ],
+          "contentH": 70,
+          "declaredH": 70,
+          "overflow": false
+        },
+        {
+          "role": "caption",
+          "box": [
+            120,
+            690,
+            1680,
+            60
+          ],
+          "contentH": 60,
+          "declaredH": 60,
+          "overflow": false
+        }
+      ]
+    }
+  ]
+}

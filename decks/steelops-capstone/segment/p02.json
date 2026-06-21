@@ -1,0 +1,126 @@
+{
+  "image": "p02.png",
+  "regions": [
+    {
+      "id": 0,
+      "box": [
+        90,
+        70,
+        700,
+        44
+      ],
+      "area": 30800,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 1,
+      "box": [
+        120,
+        150,
+        1000,
+        110
+      ],
+      "area": 110000,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 2,
+      "box": [
+        140,
+        360,
+        110,
+        110
+      ],
+      "area": 12100,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 3,
+      "box": [
+        300,
+        380,
+        1450,
+        70
+      ],
+      "area": 101500,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 4,
+      "box": [
+        140,
+        500,
+        110,
+        110
+      ],
+      "area": 12100,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 5,
+      "box": [
+        300,
+        520,
+        1450,
+        70
+      ],
+      "area": 101500,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 6,
+      "box": [
+        140,
+        640,
+        110,
+        110
+      ],
+      "area": 12100,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 7,
+      "box": [
+        300,
+        660,
+        1450,
+        70
+      ],
+      "area": 101500,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 8,
+      "box": [
+        140,
+        780,
+        110,
+        110
+      ],
+      "area": 12100,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 9,
+      "box": [
+        300,
+        800,
+        1450,
+        70
+      ],
+      "area": 101500,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    }
+  ],
+  "sam": false
+}

@@ -1,0 +1,42 @@
+{
+  "image": "p18.png",
+  "regions": [
+    {
+      "id": 0,
+      "box": [
+        120,
+        410,
+        1680,
+        190
+      ],
+      "area": 319200,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 1,
+      "box": [
+        120,
+        590,
+        1680,
+        70
+      ],
+      "area": 117600,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    },
+    {
+      "id": 2,
+      "box": [
+        120,
+        690,
+        1680,
+        60
+      ],
+      "area": 100800,
+      "score": 1.0,
+      "source": "ground-truth-fallback"
+    }
+  ],
+  "sam": false
+}
