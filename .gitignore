@@ -5,3 +5,10 @@ node_modules/
 __pycache__/
 .venv/
 .claude/
+
+# legacy kept local-only (removed from repo)
+pipeline/
+qa/
+config/
+docs/
+decks/
