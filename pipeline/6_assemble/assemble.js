@@ -65,7 +65,7 @@ function buildEditable(pres) {
       slide.addText(String(e.text), {
         x: inX(x), y: inX(y), w: inX(w), h: inX(h),
         fontSize: CLASS_PT[cls] || 18, bold: BOLD.has(cls),
-        color: textColor(s, e), fontFace: "Noto Sans KR",
+        color: textColor(s, e), fontFace: "Pretendard",
         align: "left", valign: variant ? "middle" : "top",
         margin: variant ? 8 : 2, wrap: true,
       });

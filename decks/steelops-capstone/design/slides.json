@@ -1,7 +1,10 @@
 {
   "deck": "steelops-capstone",
-  "palette": "upstage-lavender",
-  "canvas": { "w": 1920, "h": 1080 },
+  "palette": "clean-white",
+  "canvas": {
+    "w": 1920,
+    "h": 1080
+  },
   "slides": [
     {
       "id": "p01",
@@ -9,12 +12,60 @@
       "title": "SteelOps",
       "subtitle": "제철소 조업 지원 멀티에이전트",
       "elements": [
-        { "role": "lockup", "text": "Capstone · LangGraph", "box": [1480, 78, 360, 50], "style": { "class": "edu-mark" } },
-        { "role": "title", "text": "SteelOps", "box": [120, 360, 1400, 150], "style": { "class": "t-cover-title" } },
-        { "role": "subtitle", "text": "제철소 조업 지원 멀티에이전트", "box": [120, 540, 1400, 80], "style": { "class": "t-h2" } },
-        { "role": "caption", "text": "LangChain · LangGraph · Upstage Solar — 1~10강이 하나의 흐름에서 실제로 동작", "box": [120, 650, 1500, 60], "style": { "class": "t-small" } }
+        {
+          "role": "lockup",
+          "text": "Capstone · LangGraph",
+          "box": [
+            1480,
+            78,
+            360,
+            50
+          ],
+          "style": {
+            "class": "edu-mark"
+          }
+        },
+        {
+          "role": "title",
+          "text": "SteelOps",
+          "box": [
+            120,
+            360,
+            1400,
+            150
+          ],
+          "style": {
+            "class": "t-cover-title"
+          }
+        },
+        {
+          "role": "subtitle",
+          "text": "제철소 조업 지원 멀티에이전트",
+          "box": [
+            120,
+            540,
+            1400,
+            80
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        },
+        {
+          "role": "caption",
+          "text": "LangChain · LangGraph · Upstage Solar — 1~10강이 하나의 흐름에서 실제로 동작",
+          "box": [
+            120,
+            650,
+            1500,
+            60
+          ],
+          "style": {
+            "class": "t-small"
+          }
+        }
       ],
-      "image_prompt": "soft lavender to white abstract gradient, large sweeping geometric arcs lower right evoking molten metal flow and industrial steel structure, generous negative space, editorial minimal poster background, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a soft light-gray abstract gradient, large sweeping geometric arcs lower right evoking molten metal flow and industrial steel structure, generous negative space, editorial minimal poster background, NO text, NO letters, NO words",
       "notes": "캡스톤 SteelOps를 소개한다. LangChain+LangGraph+Upstage Solar로 만든, 강좌 1~10강의 모든 핵심 개념이 단일 흐름에서 실제로 동작하는 프로덕션급 사례 코드임을 강조. 제철소 조업·설비 지원 도메인이고 Mock 데이터로 실제 설비 없이 end-to-end 실행된다는 점을 예고한다. 오늘 발표 목표 한 줄: 하나의 현업 요청이 어떻게 10강 개념을 모두 통과하는지 보여주기."
     },
     {
@@ -22,18 +73,138 @@
       "type": "agenda",
       "title": "오늘의 흐름",
       "elements": [
-        { "role": "crumb", "text": "SteelOps Capstone", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "오늘의 흐름", "box": [120, 150, 1000, 110], "style": { "class": "t-title" } },
-        { "role": "number", "text": "01", "box": [140, 360, 110, 110], "style": { "class": "t-section-num" } },
-        { "role": "body", "text": "문제와 통합 시나리오", "box": [300, 380, 1450, 70], "style": { "class": "t-h2" } },
-        { "role": "number", "text": "02", "box": [140, 500, 110, 110], "style": { "class": "t-section-num" } },
-        { "role": "body", "text": "아키텍처와 요청 1건의 흐름", "box": [300, 520, 1450, 70], "style": { "class": "t-h2" } },
-        { "role": "number", "text": "03", "box": [140, 640, 110, 110], "style": { "class": "t-section-num" } },
-        { "role": "body", "text": "10강 개념 ↔ 코드 매핑", "box": [300, 660, 1450, 70], "style": { "class": "t-h2" } },
-        { "role": "number", "text": "04", "box": [140, 780, 110, 110], "style": { "class": "t-section-num" } },
-        { "role": "body", "text": "실행 데모와 정리", "box": [300, 800, 1450, 70], "style": { "class": "t-h2" } }
+        {
+          "role": "crumb",
+          "text": "SteelOps Capstone",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "오늘의 흐름",
+          "box": [
+            120,
+            150,
+            1000,
+            110
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "number",
+          "text": "01",
+          "box": [
+            140,
+            360,
+            110,
+            110
+          ],
+          "style": {
+            "class": "t-section-num"
+          }
+        },
+        {
+          "role": "body",
+          "text": "문제와 통합 시나리오",
+          "box": [
+            300,
+            380,
+            1450,
+            70
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        },
+        {
+          "role": "number",
+          "text": "02",
+          "box": [
+            140,
+            500,
+            110,
+            110
+          ],
+          "style": {
+            "class": "t-section-num"
+          }
+        },
+        {
+          "role": "body",
+          "text": "아키텍처와 요청 1건의 흐름",
+          "box": [
+            300,
+            520,
+            1450,
+            70
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        },
+        {
+          "role": "number",
+          "text": "03",
+          "box": [
+            140,
+            640,
+            110,
+            110
+          ],
+          "style": {
+            "class": "t-section-num"
+          }
+        },
+        {
+          "role": "body",
+          "text": "10강 개념 ↔ 코드 매핑",
+          "box": [
+            300,
+            660,
+            1450,
+            70
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        },
+        {
+          "role": "number",
+          "text": "04",
+          "box": [
+            140,
+            780,
+            110,
+            110
+          ],
+          "style": {
+            "class": "t-section-num"
+          }
+        },
+        {
+          "role": "body",
+          "text": "실행 데모와 정리",
+          "box": [
+            300,
+            800,
+            1450,
+            70
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        }
       ],
-      "image_prompt": "faint lavender geometric pattern with four subtle horizontal bands on the left margin, soft purple accents, lots of negative space, editorial minimal, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint light-gray geometric pattern with four subtle horizontal bands on the left margin, soft indigo accents, lots of negative space, editorial minimal, NO text, NO letters, NO words",
       "notes": "발표 네 꼭지를 안내한다. 먼저 어떤 문제를 푸는지와 하나의 통합 시나리오, 둘째 레이어드 아키텍처와 요청 한 건이 노드를 통과하는 흐름, 셋째 강좌 10강 개념이 코드 어디에 1:1로 박혀 있는지, 마지막으로 실제 실행 데모와 핵심 정리. 앞 세 꼭지가 마지막 데모를 이해하기 위한 준비임을 강조한다."
     },
     {
@@ -41,13 +212,74 @@
       "type": "concept",
       "title": "문제 — 현업 요청 한 줄",
       "elements": [
-        { "role": "crumb", "text": "01 문제와 시나리오", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "현업 요청 한 줄에서 시작한다", "box": [120, 160, 1500, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "\"2고로 상태 점검하고, 용선 품질 이상이면 정비 작업지시 초안 만들어줘\"", "box": [120, 320, 1680, 240], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "body", "text": "한 문장에 점검·판단·의사결정·위험작업 승인이 뒤섞여 있다", "box": [120, 620, 1680, 70], "style": { "class": "t-body" } },
-        { "role": "body", "text": "단일 ReAct 에이전트로는 권한·위험·추적·평가를 동시에 못 잡는다", "box": [120, 700, 1680, 70], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "01 문제와 시나리오",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "현업 요청 한 줄에서 시작한다",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "\"2고로 상태 점검하고, 용선 품질 이상이면 정비 작업지시 초안 만들어줘\"",
+          "box": [
+            120,
+            320,
+            1680,
+            240
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "body",
+          "text": "한 문장에 점검·판단·의사결정·위험작업 승인이 뒤섞여 있다",
+          "box": [
+            120,
+            620,
+            1680,
+            70
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "단일 ReAct 에이전트로는 권한·위험·추적·평가를 동시에 못 잡는다",
+          "box": [
+            120,
+            700,
+            1680,
+            70
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "minimal lavender background with a faint speech bubble silhouette and industrial blast furnace line-art in soft purple on the right, generous negative space, editorial, NO text, NO letters, NO words",
+      "image_prompt": "minimal clean white background with a faint speech bubble silhouette and industrial blast furnace line-art in soft indigo on the right, generous negative space, editorial, NO text, NO letters, NO words",
       "notes": "문제 정의. 현업 엔지니어의 자연어 요청 한 줄에는 설비 상태 점검, 품질 이상 판단, 정비 의사결정, 그리고 위험·고비용 작업의 승인까지 여러 관심사가 뒤섞여 있다. 단순한 단일 ReAct 에이전트로는 도구 권한 분리, 위험 작업 게이트, 호출 추적, 응답 품질 평가를 동시에 만족시키기 어렵다. 그래서 멀티에이전트 + 워크플로우 + 횡단 관심사 분리가 필요하다는 동기를 깐다."
     },
     {
@@ -55,14 +287,87 @@
       "type": "concept",
       "title": "통합 시나리오",
       "elements": [
-        { "role": "crumb", "text": "01 문제와 시나리오", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "하나의 흐름에 10강이 녹아든다", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "body", "text": "Orchestrator 분해·위임 → Specialist 도구 실행 → HITL 승인 게이트", "box": [120, 300, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "모든 호출 OTel 추적 + Timeout·Retry·Circuit Breaker 보호", "box": [120, 372, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "응답·궤적 Rubric·Judge 채점 → 실패 분류·회귀 환류 → 인젝션 방어", "box": [120, 444, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "card", "text": "프롬프트·모델 버전 관리 + 카나리·롤백·비용 추적으로 배포", "box": [120, 560, 1680, 200], "style": { "class": "t-h3", "variant": "card-deep" } }
+        {
+          "role": "crumb",
+          "text": "01 문제와 시나리오",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "하나의 흐름에 10강이 녹아든다",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "body",
+          "text": "Orchestrator 분해·위임 → Specialist 도구 실행 → HITL 승인 게이트",
+          "box": [
+            120,
+            300,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "모든 호출 OTel 추적 + Timeout·Retry·Circuit Breaker 보호",
+          "box": [
+            120,
+            372,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "응답·궤적 Rubric·Judge 채점 → 실패 분류·회귀 환류 → 인젝션 방어",
+          "box": [
+            120,
+            444,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "card",
+          "text": "프롬프트·모델 버전 관리 + 카나리·롤백·비용 추적으로 배포",
+          "box": [
+            120,
+            560,
+            1680,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint single continuous flowing line weaving through seven soft nodes, deep purple accent, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint single continuous flowing line weaving through seven soft nodes, deep indigo accent, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "통합 시나리오를 7스텝으로 설명한다. Orchestrator가 요청을 분해해 Specialist에게 위임하고(3강 A2A), 센서분석·품질예측·정비 Specialist가 권한 분리된 도구로 데이터를 조회·판단한다(1·2강). 위험·고비용 작업은 사람 승인 게이트를 거치고(7강), 모든 호출은 OTel span으로 추적되며 timeout·retry·circuit breaker로 보호된다(5·8강). 응답과 궤적은 rubric·judge·평가셋으로 채점되고(4·6강), 실패는 taxonomy로 분류돼 회귀셋에 환류, 악성 입력은 차단된다(9강). 마지막으로 프롬프트·모델은 버전 관리되고 카나리·롤백·비용 추적으로 배포된다(10강). 핵심: 하나의 흐름에 10강이 모두 들어간다."
     },
     {
@@ -70,14 +375,87 @@
       "type": "concept",
       "title": "아키텍처 — 단방향 레이어",
       "elements": [
-        { "role": "crumb", "text": "02 아키텍처", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "단방향 레이어드 아키텍처", "box": [120, 160, 1500, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "진입점 → API → 그래프 → 에이전트 → 코어·데이터", "box": [120, 320, 1680, 160], "style": { "class": "t-h3", "variant": "card-purple" } },
-        { "role": "body", "text": "코어가 횡단 관심사: 신뢰성·관측·보안·LLM·설정을 모아 그래프/에이전트는 얇게 조합", "box": [120, 520, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "평가·배포는 사이드 하네스로 분리 — 운영 경로와 독립 실행", "box": [120, 592, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "순환 의존 없음 → 테스트·교체 용이", "box": [120, 664, 1680, 64], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "02 아키텍처",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "단방향 레이어드 아키텍처",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "진입점 → API → 그래프 → 에이전트 → 코어·데이터",
+          "box": [
+            120,
+            320,
+            1680,
+            160
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        },
+        {
+          "role": "body",
+          "text": "코어가 횡단 관심사: 신뢰성·관측·보안·LLM·설정을 모아 그래프/에이전트는 얇게 조합",
+          "box": [
+            120,
+            520,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "평가·배포는 사이드 하네스로 분리 — 운영 경로와 독립 실행",
+          "box": [
+            120,
+            592,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "순환 의존 없음 → 테스트·교체 용이",
+          "box": [
+            120,
+            664,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "lavender background with faint horizontal layered bands stacked top to bottom, soft purple gradient, clean architectural diagram feel, generous negative space, editorial minimal, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with faint horizontal layered bands stacked top to bottom, soft indigo gradient, clean architectural diagram feel, generous negative space, editorial minimal, NO text, NO letters, NO words",
       "notes": "아키텍처 분석을 요약한다. 의존성은 진입점에서 API, 그래프, 에이전트, 코어·데이터로 단방향으로만 흐르고 순환 의존이 없다. 코어 레이어가 신뢰성·관측·보안·LLM·설정 같은 횡단 관심사를 모아두어, 그래프와 에이전트는 이를 얇게 조합만 한다. 평가와 배포는 운영 경로(API/graph)와 분리된 사이드 하네스라 run_eval·run_canary로 독립 실행된다. 이 단방향 구조 덕분에 각 부분을 테스트하고 교체하기 쉽다."
     },
     {
@@ -85,14 +463,90 @@
       "type": "compare",
       "title": "Agent vs Workflow · 권한 분리",
       "elements": [
-        { "role": "crumb", "text": "02 아키텍처", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "두 가지 핵심 설계 결정", "box": [120, 160, 1500, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "ReAct Agent — 자율 판단·도구 선택", "box": [120, 320, 820, 200], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "StateGraph Workflow — 고정 흐름·게이트", "box": [980, 320, 820, 200], "style": { "class": "t-h3", "variant": "card-deep" } },
-        { "role": "card", "text": "read 도구 — 자유 호출 (센서·품질 조회)", "box": [120, 560, 820, 200], "style": { "class": "t-h3", "variant": "card-softer" } },
-        { "role": "card", "text": "write 도구 — 승인 게이트 필수 (작업지시 발행)", "box": [980, 560, 820, 200], "style": { "class": "t-h3", "variant": "card-purple" } }
+        {
+          "role": "crumb",
+          "text": "02 아키텍처",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "두 가지 핵심 설계 결정",
+          "box": [
+            120,
+            160,
+            1500,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "ReAct Agent — 자율 판단·도구 선택",
+          "box": [
+            120,
+            320,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "StateGraph Workflow — 고정 흐름·게이트",
+          "box": [
+            980,
+            320,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        },
+        {
+          "role": "card",
+          "text": "read 도구 — 자유 호출 (센서·품질 조회)",
+          "box": [
+            120,
+            560,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-softer"
+          }
+        },
+        {
+          "role": "card",
+          "text": "write 도구 — 승인 게이트 필수 (작업지시 발행)",
+          "box": [
+            980,
+            560,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        }
       ],
-      "image_prompt": "lavender background split subtly into two vertical zones with a faint dividing arc, soft purple on the right zone, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background split subtly into two vertical zones with a faint dividing arc, soft indigo on the right zone, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "두 가지 핵심 설계 결정을 비교한다. 첫째 Agent vs Workflow: 자율적으로 판단하고 도구를 고르는 ReAct 에이전트와, 흐름과 게이트가 고정된 StateGraph 워크플로우를 함께 쓴다. 자율성이 필요한 곳은 에이전트, 안전·순서가 중요한 곳은 그래프가 담당한다. 둘째 도구 권한 scoping(2강·MCP식): 센서·품질 조회 같은 read 도구는 자유롭게 호출하되, 작업지시 발행 같은 write 도구는 반드시 사람 승인 게이트를 통과해야 한다. 이 분리가 안전성의 기초다."
     },
     {
@@ -100,17 +554,125 @@
       "type": "steps",
       "title": "요청 1건의 흐름",
       "elements": [
-        { "role": "crumb", "text": "02 아키텍처", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "요청 1건이 통과하는 노드", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "step", "text": "intake [9] 보안 스캔 — 인젝션·위험명령 차단", "box": [120, 300, 1680, 60], "style": { "class": "t-body-bold" } },
-        { "role": "step", "text": "orchestrate [3] LLM이 필요한 Specialist 선택", "box": [120, 372, 1680, 60], "style": { "class": "t-body" } },
-        { "role": "step", "text": "specialists [3] 센서분석·품질예측·정비 위임 (각 호출 [5]span·[8]보호)", "box": [120, 444, 1680, 60], "style": { "class": "t-body" } },
-        { "role": "step", "text": "decide [7] 제안 정비 작업 추출 — 위험·비용 부여", "box": [120, 516, 1680, 60], "style": { "class": "t-body" } },
-        { "role": "step", "text": "hitl_gate [7] 신뢰도·비용·위험 3축 → 승인 필요 판정", "box": [120, 588, 1680, 60], "style": { "class": "t-body-bold" } },
-        { "role": "step", "text": "act [2·8] 승인 시에만 작업지시 발행 (멱등)", "box": [120, 660, 1680, 60], "style": { "class": "t-body" } },
-        { "role": "step", "text": "synthesize 결과 종합 보고", "box": [120, 732, 1680, 60], "style": { "class": "t-body" } }
+        {
+          "role": "crumb",
+          "text": "02 아키텍처",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "요청 1건이 통과하는 노드",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "step",
+          "text": "intake [9] 보안 스캔 — 인젝션·위험명령 차단",
+          "box": [
+            120,
+            300,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        },
+        {
+          "role": "step",
+          "text": "orchestrate [3] LLM이 필요한 Specialist 선택",
+          "box": [
+            120,
+            372,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "specialists [3] 센서분석·품질예측·정비 위임 (각 호출 [5]span·[8]보호)",
+          "box": [
+            120,
+            444,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "decide [7] 제안 정비 작업 추출 — 위험·비용 부여",
+          "box": [
+            120,
+            516,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "hitl_gate [7] 신뢰도·비용·위험 3축 → 승인 필요 판정",
+          "box": [
+            120,
+            588,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        },
+        {
+          "role": "step",
+          "text": "act [2·8] 승인 시에만 작업지시 발행 (멱등)",
+          "box": [
+            120,
+            660,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "synthesize 결과 종합 보고",
+          "box": [
+            120,
+            732,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint vertical sequence of seven connected dots descending, soft purple gradient accent, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint vertical sequence of seven connected dots descending, soft indigo gradient accent, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "요청 한 건이 LangGraph StateGraph의 노드를 통과하는 순서를 짚는다. intake에서 보안 스캔으로 인젝션·위험 명령을 먼저 거른다(9강). orchestrate에서 LLM이 어떤 Specialist가 필요한지 계획하고(3강), specialists에서 센서분석·품질예측·정비를 위임 실행하는데 각 호출은 OTel span으로 추적되고 timeout·retry·circuit·budget으로 보호된다(5·8강). decide에서 제안 정비 작업을 추출해 위험·비용을 부여하고(7강), hitl_gate에서 신뢰도·비용·위험 3축으로 사람 승인이 필요한지 판정한다. act는 승인된 경우에만 멱등하게 작업지시를 발행하고(2·8강), 마지막 synthesize가 결과를 종합 보고한다. 노드 라벨의 대괄호 숫자가 곧 강 번호다."
     },
     {
@@ -118,14 +680,90 @@
       "type": "concept",
       "title": "A2A 멀티에이전트 [3강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "Orchestrator–Specialist 협업", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "Orchestrator\n요청 분해 → 위임 계획", "box": [120, 320, 540, 420], "style": { "class": "t-h3", "variant": "card-deep" } },
-        { "role": "card", "text": "센서분석 Specialist\n설비 상태 조회·해석", "box": [690, 320, 540, 200], "style": { "class": "t-body", "variant": "card-soft" } },
-        { "role": "card", "text": "품질예측 Specialist\n용선 Si·S 이상 판단", "box": [690, 540, 540, 200], "style": { "class": "t-body", "variant": "card-soft" } },
-        { "role": "card", "text": "정비 Specialist\n작업지시 초안 제안", "box": [1260, 320, 540, 420], "style": { "class": "t-body", "variant": "card-purple" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "Orchestrator–Specialist 협업",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Orchestrator\n요청 분해 → 위임 계획",
+          "box": [
+            120,
+            320,
+            540,
+            420
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        },
+        {
+          "role": "card",
+          "text": "센서분석 Specialist\n설비 상태 조회·해석",
+          "box": [
+            690,
+            320,
+            540,
+            200
+          ],
+          "style": {
+            "class": "t-body",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "품질예측 Specialist\n용선 Si·S 이상 판단",
+          "box": [
+            690,
+            540,
+            540,
+            200
+          ],
+          "style": {
+            "class": "t-body",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "정비 Specialist\n작업지시 초안 제안",
+          "box": [
+            1260,
+            320,
+            540,
+            420
+          ],
+          "style": {
+            "class": "t-body",
+            "variant": "card-purple"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint hub-and-spoke network: one central node linked to three satellite nodes, soft purple accent on the hub, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint hub-and-spoke network: one central node linked to three satellite nodes, soft indigo accent on the hub, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "3강 A2A 멀티에이전트 구현을 설명한다. Orchestrator가 현업 요청을 분해해 어떤 Specialist가 필요한지 위임 계획을 세운다. 센서분석 Specialist는 설비 상태 데이터를 조회·해석하고, 품질예측 Specialist는 용선의 규소·황 함량 등으로 품질 이상을 판단하며, 정비 Specialist는 필요한 정비 작업지시 초안을 제안한다. 각 Specialist는 base의 ReAct 에이전트를 재사용하고, 권한 분리된 도구로만 동작한다. Orchestrator가 결과를 모아 다음 단계로 넘긴다."
     },
     {
@@ -133,14 +771,89 @@
       "type": "concept",
       "title": "HITL 3축 게이트 [7강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "사람이 언제 개입하나 — 3축", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "신뢰도\n에이전트 확신 낮으면 에스컬레이션", "box": [120, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "비용\n고비용 작업은 승인 보류", "box": [690, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "위험\n고위험 정비는 사람 승인 필수", "box": [1260, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-deep" } },
-        { "role": "body", "text": "Autonomy Level 0~4 + interrupt()로 진짜 일시정지·재개", "box": [120, 730, 1680, 64], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "사람이 언제 개입하나 — 3축",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "신뢰도\n에이전트 확신 낮으면 에스컬레이션",
+          "box": [
+            120,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "비용\n고비용 작업은 승인 보류",
+          "box": [
+            690,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "위험\n고위험 정비는 사람 승인 필수",
+          "box": [
+            1260,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        },
+        {
+          "role": "body",
+          "text": "Autonomy Level 0~4 + interrupt()로 진짜 일시정지·재개",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "lavender background with three faint vertical pillars of slightly different heights, the rightmost in deep purple, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with three faint vertical pillars of slightly different heights, the rightmost in deep indigo, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "7강 자율성과 HITL을 설명한다. 에이전트가 모든 걸 자동 실행하지 않고, 신뢰도·비용·위험 3축으로 사람 개입 여부를 판정한다. 에이전트의 확신이 낮으면, 작업 비용이 크면, 또는 정비 위험이 높으면 에스컬레이션해 승인 큐에 올린다. Autonomy Level 0~4 체계로 자율 수준을 단계화하고, 실제 멈춤은 LangGraph interrupt로 구현해 그래프가 진짜로 일시정지했다가 사람 승인 후 같은 상태에서 재개된다. 예: MT-DESULF 같은 고비용·고위험 정비는 승인 보류된다."
     },
     {
@@ -148,12 +861,62 @@
       "type": "concept",
       "title": "관측·신뢰성 [5·8강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "추적하고, 실패에 견딘다", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "OpenTelemetry [5]\nspan·attribute·event로 호출 트리 추적\nInMemory 수집기로 전역 desync 회피", "box": [120, 330, 820, 400], "style": { "class": "t-h3", "variant": "card-purple" } },
-        { "role": "card", "text": "Reliability [8]\ntimeout · retry+backoff · circuit breaker\nidempotency · sandbox · StepBudget", "box": [980, 330, 820, 400], "style": { "class": "t-h3", "variant": "card-deep" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "추적하고, 실패에 견딘다",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "OpenTelemetry [5]\nspan·attribute·event로 호출 트리 추적\nInMemory 수집기로 전역 desync 회피",
+          "box": [
+            120,
+            330,
+            820,
+            400
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Reliability [8]\ntimeout · retry+backoff · circuit breaker\nidempotency · sandbox · StepBudget",
+          "box": [
+            980,
+            330,
+            820,
+            400
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        }
       ],
-      "image_prompt": "lavender background, left side faint tree of connected trace spans, right side a faint shield with circular arrows, soft purple accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background, left side faint tree of connected trace spans, right side a faint shield with circular arrows, soft indigo accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "5강 관측과 8강 신뢰성을 묶어 설명한다. 5강: 모든 LLM·도구·노드 호출을 OpenTelemetry span으로 감싸 attribute와 event를 붙이고, 호출 트리를 추적한다. 격리된 InMemory 수집기를 써서 전역 상태 desync를 피한다. API에서는 /v1/runs/{id}/trace로 span 트리를 조회할 수 있다. 8강: 같은 호출을 timeout, 지수 백오프 retry, circuit breaker, 멱등성, sandbox, StepBudget으로 보호한다. 강제 실패를 주입하면 retry가 동작하고 임계 초과 시 circuit이 열리는 걸 검증했다."
     },
     {
@@ -161,13 +924,75 @@
       "type": "concept",
       "title": "평가 하네스 [4·6강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "응답을 채점하고 Judge를 정렬한다", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "Rubric·Trajectory [4]\n궤적 채점 · pass@k / pass^k", "box": [120, 330, 820, 360], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "Dataset·Judge [6]\ngolden·trace·adversarial 평가셋\nLLM-as-Judge + Cohen's κ 정렬", "box": [980, 330, 820, 360], "style": { "class": "t-h3", "variant": "card-purple" } },
-        { "role": "body", "text": "운영 경로와 분리된 사이드 하네스 — run_eval.py로 독립 실행", "box": [120, 730, 1680, 64], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "응답을 채점하고 Judge를 정렬한다",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Rubric·Trajectory [4]\n궤적 채점 · pass@k / pass^k",
+          "box": [
+            120,
+            330,
+            820,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Dataset·Judge [6]\ngolden·trace·adversarial 평가셋\nLLM-as-Judge + Cohen's κ 정렬",
+          "box": [
+            980,
+            330,
+            820,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        },
+        {
+          "role": "body",
+          "text": "운영 경로와 분리된 사이드 하네스 — run_eval.py로 독립 실행",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint scorecard grid on the left and two overlapping circles suggesting agreement on the right, soft purple accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint scorecard grid on the left and two overlapping circles suggesting agreement on the right, soft indigo accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "4강과 6강 평가를 설명한다. 4강: 에이전트의 궤적(trajectory)을 rubric으로 채점하고, pass@k·pass^k로 반복 실행의 통과율을 측정한다. 6강: golden·trace·adversarial 세 종류 평가셋을 구성하고, LLM-as-Judge로 응답을 채점하되 사람 라벨과의 일치도를 Cohen's κ로 정렬해 Judge의 신뢰도를 확보한다. 이 평가 하네스는 운영 경로와 분리돼 있어 run_eval.py로 독립 실행되고, rubric 5/5, Judge κ 같은 리포트를 출력한다."
     },
     {
@@ -175,12 +1000,62 @@
       "type": "concept",
       "title": "진화·보안 [9강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "실패를 환류하고 공격을 막는다", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "Failure Taxonomy\nPrompt·Tool·Retrieval·Workflow 4분류\n→ 회귀셋 환류", "box": [120, 330, 820, 400], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "Security\n프롬프트 인젝션 탐지\n입력 스키마 검증 · OWASP 가드", "box": [980, 330, 820, 400], "style": { "class": "t-h3", "variant": "card-deep" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "실패를 환류하고 공격을 막는다",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Failure Taxonomy\nPrompt·Tool·Retrieval·Workflow 4분류\n→ 회귀셋 환류",
+          "box": [
+            120,
+            330,
+            820,
+            400
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Security\n프롬프트 인젝션 탐지\n입력 스키마 검증 · OWASP 가드",
+          "box": [
+            980,
+            330,
+            820,
+            400
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        }
       ],
-      "image_prompt": "lavender background, left side a faint recycling-loop arrow, right side a faint lock and shield motif in deep purple, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background, left side a faint recycling-loop arrow, right side a faint lock and shield motif in deep indigo, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "9강 자기진화와 보안을 설명한다. 실패는 그냥 버리지 않고 Failure Taxonomy로 Prompt·Tool·Retrieval·Workflow 네 범주로 분류해 회귀셋에 환류한다. 그래서 같은 실패가 반복되면 회귀 테스트로 잡힌다. 보안 측면에서는 intake 단계에서 프롬프트 인젝션을 탐지하고, 입력 스키마를 검증하며, OWASP 기반 가드로 위험 명령을 차단한다. 예를 들어 악성 '설비 정지' 같은 입력은 실행 전에 차단된다."
     },
     {
@@ -188,14 +1063,89 @@
       "type": "concept",
       "title": "배포 [10강]",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "버전·카나리·롤백·비용", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "Versioning\n프롬프트·모델 버전 레지스트리", "box": [120, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "Canary·Rollback\n오류율·지연 트리거 자동 롤백", "box": [690, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-purple" } },
-        { "role": "card", "text": "Cost Guard\n토큰·비용 추적·예산 가드", "box": [1260, 330, 540, 360], "style": { "class": "t-h3", "variant": "card-deep" } },
-        { "role": "body", "text": "canary v2 오류율↑ → 자동 롤백, 비용 리포트 — run_canary.py (LLM 불필요)", "box": [120, 730, 1680, 64], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "버전·카나리·롤백·비용",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Versioning\n프롬프트·모델 버전 레지스트리",
+          "box": [
+            120,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Canary·Rollback\n오류율·지연 트리거 자동 롤백",
+          "box": [
+            690,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        },
+        {
+          "role": "card",
+          "text": "Cost Guard\n토큰·비용 추적·예산 가드",
+          "box": [
+            1260,
+            330,
+            540,
+            360
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        },
+        {
+          "role": "body",
+          "text": "canary v2 오류율↑ → 자동 롤백, 비용 리포트 — run_canary.py (LLM 불필요)",
+          "box": [
+            120,
+            730,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint branching path where one branch diverts back, plus a small gauge meter motif, soft purple and deep purple accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint branching path where one branch diverts back, plus a small gauge meter motif, soft indigo and deep indigo accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "10강 배포를 설명한다. 프롬프트와 모델은 버전 레지스트리로 관리해 어떤 버전이 활성인지 추적한다. 카나리 배포로 새 버전 v2에 일부 트래픽을 흘리고, 오류율이나 지연이 임계를 넘으면 자동으로 이전 버전으로 롤백한다. 비용 측면에서는 토큰과 비용을 추적하고 예산 가드로 과금을 막는다. run_canary.py는 LLM 호출 없이도 카나리 오류·지연에 따른 자동 롤백과 비용 리포트를 시뮬레이션한다."
     },
     {
@@ -203,13 +1153,74 @@
       "type": "compare",
       "title": "강 ↔ 코드 매핑",
       "elements": [
-        { "role": "crumb", "text": "03 10강 ↔ 코드", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "10강이 코드에 1:1로 박혀 있다", "box": [120, 150, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "body", "text": "1 ReAct · 2 도구권한 · 3 A2A · 4 Trajectory · 5 OTel", "box": [120, 300, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "6 Judge·κ · 7 HITL · 8 Reliability · 9 Taxonomy·Security · 10 Deploy", "box": [120, 372, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "card", "text": "agents · core · graph · eval · deploy — 각 강이 실제 모듈로 동작", "box": [120, 480, 1680, 280], "style": { "class": "t-h3", "variant": "card-purple" } }
+        {
+          "role": "crumb",
+          "text": "03 10강 ↔ 코드",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "10강이 코드에 1:1로 박혀 있다",
+          "box": [
+            120,
+            150,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "body",
+          "text": "1 ReAct · 2 도구권한 · 3 A2A · 4 Trajectory · 5 OTel",
+          "box": [
+            120,
+            300,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "6 Judge·κ · 7 HITL · 8 Reliability · 9 Taxonomy·Security · 10 Deploy",
+          "box": [
+            120,
+            372,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "card",
+          "text": "agents · core · graph · eval · deploy — 각 강이 실제 모듈로 동작",
+          "box": [
+            120,
+            480,
+            1680,
+            280
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint ten-cell grid mapping to ten module blocks via thin connecting lines, soft purple accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint ten-cell grid mapping to ten module blocks via thin connecting lines, soft indigo accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "강좌 1~10강 개념이 코드에 1:1로 매핑됨을 정리한다. 1강 ReAct는 agents/base, 2강 도구 권한은 core/tools, 3강 A2A는 orchestrator·specialists·graph/workflow, 4강 Trajectory는 eval/rubric·harness, 5강 OTel은 core/observability, 6강 Judge·κ는 eval/dataset·judge, 7강 HITL은 agents/autonomy·graph/workflow, 8강 Reliability는 core/reliability, 9강은 eval/failure_taxonomy·core/security, 10강은 deploy/versioning·canary·cost. 개념이 슬라이드용 장식이 아니라 실제 실행 모듈로 들어가 있다는 점이 이 캡스톤의 핵심이다."
     },
     {
@@ -217,14 +1228,87 @@
       "type": "concept",
       "title": "HITL 일시정지/재개",
       "elements": [
-        { "role": "crumb", "text": "04 실행과 정리", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "진짜로 멈췄다가 이어서 발행", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "step", "text": "1. POST /v1/chat → 고위험 작업 감지 시 interrupt() 일시정지", "box": [120, 320, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "step", "text": "2. 200 {status: awaiting_approval, action, reasons} 반환", "box": [120, 400, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "step", "text": "3. POST /v1/runs/{id}/approve → Command(resume)로 같은 그래프 재개", "box": [120, 480, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "card", "text": "MemorySaver/SqliteSaver 체크포인터 + 비직렬화 객체는 runtime 레지스트리로 분리", "box": [120, 600, 1680, 160], "style": { "class": "t-h3", "variant": "card-deep" } }
+        {
+          "role": "crumb",
+          "text": "04 실행과 정리",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "진짜로 멈췄다가 이어서 발행",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "step",
+          "text": "1. POST /v1/chat → 고위험 작업 감지 시 interrupt() 일시정지",
+          "box": [
+            120,
+            320,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "2. 200 {status: awaiting_approval, action, reasons} 반환",
+          "box": [
+            120,
+            400,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "step",
+          "text": "3. POST /v1/runs/{id}/approve → Command(resume)로 같은 그래프 재개",
+          "box": [
+            120,
+            480,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "card",
+          "text": "MemorySaver/SqliteSaver 체크포인터 + 비직렬화 객체는 runtime 레지스트리로 분리",
+          "box": [
+            120,
+            600,
+            1680,
+            160
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint pause-then-resume timeline: a gap in a horizontal line bridged by a soft purple arc, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint pause-then-resume timeline: a gap in a horizontal line bridged by a soft indigo arc, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "API에서 HITL이 진짜 일시정지·재개로 동작하는 방식을 설명한다. 현업이 고위험·고비용 정비를 요청하면 그래프가 interrupt로 멈추고 awaiting_approval 상태와 함께 제안 action, 보류 이유를 반환한다. 사람이 approve 엔드포인트로 승인하면 Command(resume)로 멈췄던 같은 그래프가 이어서 작업지시를 발행한다. 이게 가능한 건 MemorySaver 또는 SqliteSaver 체크포인터로 상태를 저장하기 때문이다. OTel·budget 같은 비직렬화 객체는 체크포인터 직렬화를 피해 graph/runtime.py 레지스트리에 run_id로 따로 보관한다."
     },
     {
@@ -232,14 +1316,90 @@
       "type": "practice",
       "title": "실행 데모",
       "elements": [
-        { "role": "crumb", "text": "04 실행과 정리", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "네 가지 실행 경로", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "server.py — FastAPI 실서비스\nlocalhost:8000/docs", "box": [120, 320, 820, 200], "style": { "class": "t-h3", "variant": "card-purple" } },
-        { "role": "card", "text": "run_demo.py — end-to-end 멀티에이전트", "box": [980, 320, 820, 200], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "run_eval.py — Trajectory·Judge·pass@k", "box": [120, 560, 820, 200], "style": { "class": "t-h3", "variant": "card-soft" } },
-        { "role": "card", "text": "run_canary.py — 카나리·롤백 (LLM 불필요)", "box": [980, 560, 820, 200], "style": { "class": "t-h3", "variant": "card-softer" } }
+        {
+          "role": "crumb",
+          "text": "04 실행과 정리",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "네 가지 실행 경로",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "server.py — FastAPI 실서비스\nlocalhost:8000/docs",
+          "box": [
+            120,
+            320,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-purple"
+          }
+        },
+        {
+          "role": "card",
+          "text": "run_demo.py — end-to-end 멀티에이전트",
+          "box": [
+            980,
+            320,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "run_eval.py — Trajectory·Judge·pass@k",
+          "box": [
+            120,
+            560,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-soft"
+          }
+        },
+        {
+          "role": "card",
+          "text": "run_canary.py — 카나리·롤백 (LLM 불필요)",
+          "box": [
+            980,
+            560,
+            820,
+            200
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-softer"
+          }
+        }
       ],
-      "image_prompt": "lavender background with four faint rounded terminal window outlines arranged in a 2x2 grid, soft purple accents, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "bright high-key pure white background, four faint light-gray rounded terminal window outlines arranged in a 2x2 grid, soft indigo accents, editorial minimal, generous negative space, mostly white, NO dark colors, NO text, NO letters, NO words",
       "notes": "실제 실행 경로 네 가지를 보여준다. server.py는 FastAPI 실서비스로 Swagger UI에서 /v1/chat·approve·trace·stream을 직접 호출해볼 수 있다. run_demo.py는 서비스 없이 빠르게 1·2·3·5·7·8·9강이 녹은 end-to-end 멀티에이전트 데모를 돌린다. run_eval.py는 4·6·9강 Trajectory/Judge 평가와 pass@k, Failure Taxonomy를 출력한다. run_canary.py는 키 없이도 동작하는 10강 카나리 배포·자동 롤백·비용 가드 시뮬레이션이다. 데모에서는 server.py로 HITL 일시정지·승인·재개를 라이브로 보여주는 걸 권장한다."
     },
     {
@@ -247,15 +1407,100 @@
       "type": "summary",
       "title": "핵심 정리",
       "elements": [
-        { "role": "crumb", "text": "04 실행과 정리", "box": [90, 70, 700, 44], "style": { "class": "crumb" } },
-        { "role": "title", "text": "핵심 정리", "box": [120, 160, 1600, 100], "style": { "class": "t-title" } },
-        { "role": "card", "text": "하나의 현업 요청이 10강 개념을 모두 통과한다", "box": [120, 320, 1680, 130], "style": { "class": "t-h3", "variant": "card-deep" } },
-        { "role": "body", "text": "멀티에이전트 + 워크플로우 + 코어 횡단 관심사로 안전·추적·평가를 동시에", "box": [120, 480, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "HITL interrupt로 위험 작업은 사람이 책임지고 승인", "box": [120, 552, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "평가·배포 하네스 분리로 품질과 운영을 독립적으로 검증", "box": [120, 624, 1680, 64], "style": { "class": "t-body" } },
-        { "role": "body", "text": "Mock 데이터로 실제 설비 없이 end-to-end 재현 가능", "box": [120, 696, 1680, 64], "style": { "class": "t-body-bold" } }
+        {
+          "role": "crumb",
+          "text": "04 실행과 정리",
+          "box": [
+            90,
+            70,
+            700,
+            44
+          ],
+          "style": {
+            "class": "crumb"
+          }
+        },
+        {
+          "role": "title",
+          "text": "핵심 정리",
+          "box": [
+            120,
+            160,
+            1600,
+            100
+          ],
+          "style": {
+            "class": "t-title"
+          }
+        },
+        {
+          "role": "card",
+          "text": "하나의 현업 요청이 10강 개념을 모두 통과한다",
+          "box": [
+            120,
+            320,
+            1680,
+            130
+          ],
+          "style": {
+            "class": "t-h3",
+            "variant": "card-deep"
+          }
+        },
+        {
+          "role": "body",
+          "text": "멀티에이전트 + 워크플로우 + 코어 횡단 관심사로 안전·추적·평가를 동시에",
+          "box": [
+            120,
+            480,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "HITL interrupt로 위험 작업은 사람이 책임지고 승인",
+          "box": [
+            120,
+            552,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "평가·배포 하네스 분리로 품질과 운영을 독립적으로 검증",
+          "box": [
+            120,
+            624,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body"
+          }
+        },
+        {
+          "role": "body",
+          "text": "Mock 데이터로 실제 설비 없이 end-to-end 재현 가능",
+          "box": [
+            120,
+            696,
+            1680,
+            64
+          ],
+          "style": {
+            "class": "t-body-bold"
+          }
+        }
       ],
-      "image_prompt": "lavender background with a faint single converging line where multiple thin strands merge into one bold deep purple stroke, editorial minimal, generous negative space, NO text, NO letters, NO words",
+      "image_prompt": "clean white background with a faint single converging line where multiple thin strands merge into one bold deep indigo stroke, editorial minimal, generous negative space, NO text, NO letters, NO words",
       "notes": "핵심을 네 가지로 정리한다. 첫째 하나의 현업 요청이 10강 개념을 모두 통과한다는 게 이 캡스톤의 설계 의도다. 둘째 멀티에이전트와 고정 워크플로우, 코어의 횡단 관심사 분리를 결합해 안전성·추적성·평가를 동시에 잡았다. 셋째 HITL interrupt로 고위험·고비용 작업은 사람이 책임지고 승인하게 했다. 넷째 평가와 배포를 사이드 하네스로 분리해 품질과 운영을 독립적으로 검증한다. 그리고 전체가 Mock 데이터로 실제 설비 없이도 재현 가능하다는 점을 다시 강조한다."
     },
     {
@@ -263,9 +1508,45 @@
       "type": "closing",
       "title": "Q&A",
       "elements": [
-        { "role": "title", "text": "감사합니다", "box": [120, 410, 1680, 190], "style": { "class": "t-cover-title" } },
-        { "role": "subtitle", "text": "SteelOps — 제철소 조업 지원 멀티에이전트 · Q&A", "box": [120, 590, 1680, 70], "style": { "class": "t-h2" } },
-        { "role": "caption", "text": "LangChain · LangGraph · Upstage Solar", "box": [120, 690, 1680, 60], "style": { "class": "t-small" } }
+        {
+          "role": "title",
+          "text": "감사합니다",
+          "box": [
+            120,
+            410,
+            1680,
+            190
+          ],
+          "style": {
+            "class": "t-cover-title"
+          }
+        },
+        {
+          "role": "subtitle",
+          "text": "SteelOps — 제철소 조업 지원 멀티에이전트 · Q&A",
+          "box": [
+            120,
+            590,
+            1680,
+            70
+          ],
+          "style": {
+            "class": "t-h2"
+          }
+        },
+        {
+          "role": "caption",
+          "text": "LangChain · LangGraph · Upstage Solar",
+          "box": [
+            120,
+            690,
+            1680,
+            60
+          ],
+          "style": {
+            "class": "t-small"
+          }
+        }
       ],
       "image_prompt": "dark deep-navy purple gradient background with subtle sparkle particles and a faint molten-metal arc glow at the bottom, premium closing slide, NO text, NO letters, NO words",
       "notes": "마무리 슬라이드. 발표를 듣고 질문을 받는다. 다크 인터루드 톤으로 시각적 전환을 준다. 자주 나올 질문 대비: 왜 Solar인가(강좌 표준), 실제 설비 연동은(Mock을 실데이터 어댑터로 교체), HITL을 더 세분화할 수 있나(Autonomy Level 0~4 조정), LangSmith로 외부 추적도 병행(환경변수만으로 자동). 연락·코드 위치 안내."

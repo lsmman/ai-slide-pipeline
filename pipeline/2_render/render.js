@@ -13,6 +13,17 @@ const slides = JSON.parse(
 ).slides;
 const chromeCss = fs.readFileSync(path.join(root, "config", "chrome.css"), "utf-8");
 
+// Pretendard embedded as base64 — setContent pages (about:blank) cannot load file:// fonts.
+const fontB64 = fs
+  .readFileSync(path.join(root, "config", "fonts", "PretendardVariable.woff2"))
+  .toString("base64");
+const fontFace = `@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  src: url(data:font/woff2;base64,${fontB64}) format('woff2-variations');
+}`;
+
 const CANVAS_W = 1920, CANVAS_H = 1080, TOL = 6;
 
 function esc(s) {
@@ -22,8 +33,14 @@ function multiline(s) {
   return esc(s).replace(/\n/g, "<br>");
 }
 
-// Deterministic lavender / dark background per slide (NO text — pure decoration).
+// Background per slide. If an AI-generated image exists (assets/ai-backgrounds/<id>.png)
+// it is embedded as base64; otherwise a clean-white deterministic fallback (NO text).
 function backgroundCss(slide) {
+  const aiBg = path.join(deck, "assets", "ai-backgrounds", `${slide.id}.png`);
+  if (fs.existsSync(aiBg)) {
+    const b64 = fs.readFileSync(aiBg).toString("base64");
+    return `background:#FFFFFF url(data:image/png;base64,${b64}) center/cover no-repeat;`;
+  }
   const dark = slide.type === "closing" ||
     (slide.elements || []).some(e => (e.style || {}).variant === "dark") ||
     /dark|navy/i.test(slide.image_prompt || "");
@@ -34,10 +51,9 @@ function backgroundCss(slide) {
       linear-gradient(135deg, #0B1030 0%, #14193C 55%, #1C1B4B 100%);`;
   }
   return `background:
-    radial-gradient(1100px 700px at 88% 92%, rgba(99,102,241,0.18), transparent 60%),
-    radial-gradient(800px 600px at 8% 6%, rgba(99,102,241,0.10), transparent 55%),
-    radial-gradient(600px 600px at 95% 8%, rgba(79,70,229,0.10), transparent 60%),
-    linear-gradient(160deg, #F7F7FF 0%, #F4F4FF 60%, #ECEDFF 100%);`;
+    radial-gradient(1100px 700px at 90% 95%, rgba(99,102,241,0.07), transparent 60%),
+    radial-gradient(700px 500px at 6% 4%, rgba(17,24,39,0.04), transparent 55%),
+    #FFFFFF;`;
 }
 
 function elementHtml(e) {
@@ -58,6 +74,7 @@ function slideHtml(slide) {
   const dark = slide.type === "closing";
   const els = (slide.elements || []).map(elementHtml).join("\n");
   return `<!doctype html><html><head><meta charset="utf-8"><style>
+${fontFace}
 ${chromeCss}
 html,body{margin:0;padding:0;}
 .stage{position:relative;width:${CANVAS_W}px;height:${CANVAS_H}px;overflow:hidden;${backgroundCss(slide)}${dark ? "color:#fff;" : ""}}

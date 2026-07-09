@@ -2,7 +2,7 @@
 
 `imagegen-ppt-pipeline` 스킬로 생성. 소스: `capstone/{PLAN,README,ARCHITECTURE}.md`.
 
-- 18장 · 1920×1080 · palette `upstage-lavender`
+- 18장 · 1920×1080 · palette `clean-white` · 폰트 Pretendard (`config/fonts/`, 렌더 시 base64 임베드)
 - QA 점수 **100/100** (임계 90) — `python3 qa/score.py decks/steelops-capstone`
 
 ## 재생성
@@ -24,6 +24,6 @@ bash pipeline/run_all.sh decks/steelops-capstone
 
 ## 구현 메모 (자율 실행 시 결정)
 
-- **배경**: AI 이미지생성(higgsfield) 대신 **결정적 SVG/CSS 라벤더 그라데이션** 사용 — 수렴·무크레딧. `pipeline/2_render/render.js`의 `backgroundCss()` 교체 지점.
+- **배경**: 8장(p01–p04, p07, p08, p16, p18)은 **codex 이미지 생성** — `pipeline/2_render/gen_backgrounds.sh` → `assets/ai-backgrounds/pXX.png`, `render.js`가 존재 시 자동 사용. 나머지 10장은 클린 화이트 CSS 폴백. 주의: 병렬(-P 3) 생성 시 결과 이미지 중복 사례 → md5 확인 후 개별 재생성.
 - **Stage 4 SAM**: `META_SAM_API_URL`+`META_SAM_API_KEY` 없어 **ground-truth 박스 폴백**. 키 설정 시 자동으로 Meta SAM API 호출(`segment.py`).
 - **Stage 5 설명**: 현재 ground-truth 요소맵 기반(정확). 실 SAM+Claude 비전 라벨링으로 강화 가능.

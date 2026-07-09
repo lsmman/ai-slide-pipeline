@@ -7,18 +7,18 @@
 
 body {
   margin: 0; padding: 0; overflow: hidden;
-  font-family: 'Noto Sans KR', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
   color: #1A1A1A;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Light lavender background — matches source #F4F4FF */
+/* Clean white background */
 .slide-container {
   position: relative;
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  background: #F4F4FF;
+  background: #FFFFFF;
 }
 
 .slide-container.dark {
@@ -28,7 +28,7 @@ body {
 
 /* Brand colors */
 :root {
-  --bg: #F4F4FF;
+  --bg: #FFFFFF;
   --ink: #1A1A1A;
   --ink-2: #333333;
   --muted: #6B7280;
@@ -93,6 +93,7 @@ body {
 /* Source-style card */
 .card {
   background: #FFFFFF;
+  border: 1px solid var(--rule);
   border-radius: 12px;
   padding: 32px;
 }
