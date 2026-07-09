@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "slides-grab": {
+      "command": "node",
+      "args": ["tools/slides-grab-mcp/server.js"]
+    }
+  }
+}
