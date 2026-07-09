@@ -61,7 +61,7 @@ cp -r ai-slide-pipeline/skills/slide-decks-start ~/.claude/skills/
 | 경로 | 스타일 | 설명 |
 |---|---|---|
 | `examples/j-space` | executive-navy (이미지 없음) | Anthropic J-space 연구 브리핑 12장 |
-| `examples/claude-code-intro` | clean-white + AI 이미지 3장 | Claude Code 소개 12장 |
+| `examples/claude-code-intro` | clean-white + AI 이미지 3장 | Claude Code 소개 12장 (이미지 에셋 미포함 — 스킬로 재생성) |
 
 ```bash
 npx slides-grab pdf --slides-dir examples/j-space/slides --output j-space.pdf
