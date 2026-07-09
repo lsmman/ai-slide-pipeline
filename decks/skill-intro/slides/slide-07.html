@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; gap: 48pt;
+    }
+    .left { width: 235pt; display: flex; flex-direction: column; }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; line-height: 1.25; }
+    .left p.lead { font-size: 13.5pt; color: #6B7280; line-height: 1.65; margin-top: 16pt; }
+    .right { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .rule { display: flex; align-items: center; gap: 14pt; padding: 10pt 0; border-bottom: 1px solid #E5E7EB; }
+    .rule:last-child { border-bottom: none; }
+    .rule h3 { font-size: 14pt; font-weight: 700; width: 150pt; }
+    .rule p { font-size: 12.5pt; color: #6B7280; line-height: 1.5; flex: 1; }
+    .rule code { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 11pt; color: #4F46E5; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <p class="eyebrow">03 · 내부 파이프라인</p>
+    <h2>Design 단계의<br>강제 규칙</h2>
+    <p class="lead">이 규칙들이 게이트 통과율을 만듭니다. 전부 스킬 문서에 이유와 함께 박혀 있습니다.</p>
+  </div>
+  <div class="right">
+    <div class="rule"><h3>캔버스 고정</h3><p><code>720×405pt</code> + body <code>position: relative</code></p></div>
+    <div class="rule"><h3>한글 조판</h3><p><code>keep-all</code> + <code>text-wrap: pretty</code> — 어절 보존</p></div>
+    <div class="rule"><h3>타입 하한</h3><p>본문 12pt+, 기능 라벨 10pt — 그 밑은 Critical</p></div>
+    <div class="rule"><h3>색 전수 문서화</h3><p>모든 hex를 design-notes 토큰 표에 — 미등록 색은 Major</p></div>
+    <div class="rule"><h3>AI slop 금지</h3><p>좌측 보더 카드 · 과한 그라데이션 · 획일 아이콘 그리드 · 더미 수치</p></div>
+  </div>
+  <p class="pagenum">07</p>
+</body>
+</html>
