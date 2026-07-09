@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; }
+    .steps { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 13pt; max-width: 560pt; }
+    .step { display: flex; align-items: center; gap: 18pt; }
+    .n {
+      width: 26pt; height: 26pt; flex: none; border-radius: 50%;
+      background: #4F46E5; display: flex; align-items: center; justify-content: center;
+    }
+    .n p { color: #FFFFFF; font-size: 13pt; font-weight: 700; }
+    .step h3 { font-size: 14.5pt; font-weight: 700; width: 150pt; }
+    .step code {
+      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+      font-size: 12pt; color: #374151; background: #F7F8FC;
+      border: 1px solid #E5E7EB; border-radius: 6pt; padding: 5pt 10pt;
+    }
+    .step p.d { font-size: 12.5pt; color: #6B7280; }
+    .tip { font-size: 13pt; color: #6B7280; border-top: 1px solid #E5E7EB; padding-top: 14pt; line-height: 1.6; }
+    .tip strong { color: #111827; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <p class="eyebrow">04 · 시작하기</p>
+  <h2>5분이면 시작합니다</h2>
+  <div class="steps">
+    <div class="step"><div class="n"><p>1</p></div><h3>설치</h3><code>npm install -g @anthropic-ai/claude-code</code></div>
+    <div class="step"><div class="n"><p>2</p></div><h3>로그인</h3><code>claude</code><p class="d">첫 실행 시 브라우저 인증</p></div>
+    <div class="step"><div class="n"><p>3</p></div><h3>프로젝트에서 실행</h3><code>cd my-project && claude</code></div>
+    <div class="step"><div class="n"><p>4</p></div><h3>규칙 작성</h3><code>/init</code><p class="d">CLAUDE.md 자동 생성</p></div>
+  </div>
+  <p class="tip"><strong>Tip.</strong> 첫 작업은 작게 — 테스트 하나 고치기부터. 권한 모드로 파일 수정 · 명령 실행 범위를 단계적으로 열 수 있습니다.</p>
+  <p class="pagenum">11</p>
+</body>
+</html>

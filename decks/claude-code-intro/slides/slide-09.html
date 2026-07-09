@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; }
+    .hero { flex: 1; display: flex; align-items: center; justify-content: center; padding: 10pt 0; }
+    .hero img { max-height: 190pt; max-width: 100%; object-fit: contain; }
+    .platforms { display: flex; border-top: 1px solid #E5E7EB; padding-top: 14pt; }
+    .pf { flex: 1; text-align: center; }
+    .pf h3 { font-size: 13.5pt; font-weight: 700; }
+    .pf p { font-size: 12pt; color: #6B7280; margin-top: 2pt; }
+    .pf + .pf { border-left: 1px solid #E5E7EB; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <p class="eyebrow">03 · 핵심 기능</p>
+  <h2>어디서든 같은 에이전트</h2>
+  <div class="hero"><img src="./assets/platforms.png" alt="platforms illustration"></div>
+  <div class="platforms">
+    <div class="pf"><h3>터미널 CLI</h3><p>가장 빠른 기본형</p></div>
+    <div class="pf"><h3>데스크톱 앱</h3><p>Mac · Windows</p></div>
+    <div class="pf"><h3>웹</h3><p>claude.ai/code</p></div>
+    <div class="pf"><h3>IDE 확장</h3><p>VS Code · JetBrains</p></div>
+  </div>
+  <p class="pagenum">09</p>
+</body>
+</html>

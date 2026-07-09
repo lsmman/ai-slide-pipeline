@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; gap: 48pt;
+    }
+    .left { flex: 1; display: flex; flex-direction: column; }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; line-height: 1.2; }
+    .rows { margin-top: 24pt; }
+    .row { padding: 12pt 0; border-bottom: 1px solid #E5E7EB; }
+    .row:last-child { border-bottom: none; }
+    .row h3 { font-size: 14.5pt; font-weight: 700; margin-bottom: 3pt; }
+    .row p { font-size: 12.5pt; color: #6B7280; line-height: 1.5; }
+    .diagram { width: 280pt; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .root {
+      padding: 12pt 26pt; background: #4F46E5; border-radius: 10pt;
+    }
+    .root p { color: #FFFFFF; font-size: 13pt; font-weight: 700; }
+    .stem { width: 1.5pt; height: 18pt; background: #C7CBF2; }
+    .branches { width: 100%; display: flex; justify-content: center; position: relative; }
+    .branches::before {
+      content: ""; position: absolute; top: 0; left: 15%; right: 15%;
+      height: 1.5pt; background: #C7CBF2;
+    }
+    .branch { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .branch .drop { width: 1.5pt; height: 16pt; background: #C7CBF2; }
+    .agent {
+      width: 76pt; padding: 10pt 0; text-align: center;
+      border: 1.5pt solid #E5E7EB; border-radius: 9pt; background: #F7F8FC;
+    }
+    .agent p { font-size: 12pt; font-weight: 600; color: #374151; }
+    .dlabel { margin-top: 14pt; font-size: 12pt; color: #9CA3AF; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <p class="eyebrow">03 · 핵심 기능</p>
+    <h2>큰 작업은 쪼개서,<br>동시에</h2>
+    <div class="rows">
+      <div class="row">
+        <h3>서브에이전트 병렬 실행</h3>
+        <p>탐색 · 리뷰 · 수정을 각각의 에이전트가 동시에 진행</p>
+      </div>
+      <div class="row">
+        <h3>백그라운드 작업</h3>
+        <p>긴 빌드나 배포는 뒤로 보내고, 끝나면 알림</p>
+      </div>
+      <div class="row">
+        <h3>워크플로우 오케스트레이션</h3>
+        <p>대규모 마이그레이션 · 감사도 수십 에이전트로 스케일</p>
+      </div>
+    </div>
+  </div>
+  <div class="diagram">
+    <div class="root"><p>메인 에이전트</p></div>
+    <div class="stem"></div>
+    <div class="branches">
+      <div class="branch"><div class="drop"></div><div class="agent"><p>코드 탐색</p></div></div>
+      <div class="branch"><div class="drop"></div><div class="agent"><p>버그 수정</p></div></div>
+      <div class="branch"><div class="drop"></div><div class="agent"><p>리뷰 검증</p></div></div>
+    </div>
+    <p class="dlabel">작업 분배 → 결과 취합</p>
+  </div>
+  <p class="pagenum">08</p>
+</body>
+</html>

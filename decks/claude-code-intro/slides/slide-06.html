@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; }
+    .cols { flex: 1; display: flex; gap: 44pt; align-items: center; }
+    .filecard {
+      width: 300pt; border: 1.5pt solid #E5E7EB; border-radius: 10pt; overflow: hidden;
+      box-shadow: 0 2pt 10pt rgba(17, 24, 39, 0.05);
+    }
+    .filecard .bar {
+      background: #F7F8FC; border-bottom: 1px solid #E5E7EB;
+      padding: 7pt 12pt; display: flex; align-items: center; gap: 6pt;
+    }
+    .dot { width: 6pt; height: 6pt; border-radius: 50%; background: #D1D5DB; }
+    .filecard .bar p { font-size: 10pt; font-weight: 600; color: #6B7280; margin-left: 6pt; font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+    .filecard .code { padding: 12pt 14pt; font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+    .filecard .code p { font-size: 12pt; line-height: 1.75; color: #374151; }
+    .filecard .code p.c { color: #9CA3AF; }
+    .filecard .code strong { color: #4F46E5; font-weight: 700; }
+    .list { flex: 1; }
+    .row { padding: 13pt 0; border-bottom: 1px solid #E5E7EB; }
+    .row:last-child { border-bottom: none; }
+    .row h3 { font-size: 15pt; font-weight: 700; margin-bottom: 3pt; }
+    .row p { font-size: 12.5pt; color: #6B7280; line-height: 1.5; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <p class="eyebrow">03 · 핵심 기능</p>
+  <h2>팀의 규칙을 기억합니다</h2>
+  <div class="cols">
+    <div class="filecard">
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><p>CLAUDE.md</p></div>
+      <div class="code">
+        <p class="c"># 프로젝트 규칙</p>
+        <p>- 패키지 매니저: <strong>pnpm</strong></p>
+        <p>- 테스트: <strong>vitest</strong>, 커밋 전 필수</p>
+        <p>- 커밋 메시지: <strong>conventional</strong></p>
+        <p>- 스타일: 함수형 우선, 주석은 영어</p>
+      </div>
+    </div>
+    <div class="list">
+      <div class="row">
+        <h3>CLAUDE.md — 프로젝트 규칙서</h3>
+        <p>빌드 명령, 컨벤션, 금지사항을 한 번 적으면 매 세션 적용</p>
+      </div>
+      <div class="row">
+        <h3>자동 코드베이스 탐색</h3>
+        <p>설명 없이도 구조와 패턴을 스스로 파악</p>
+      </div>
+      <div class="row">
+        <h3>세션 간 메모리</h3>
+        <p>지난 작업의 결정과 피드백을 다음 세션에서 재사용</p>
+      </div>
+    </div>
+  </div>
+  <p class="pagenum">06</p>
+</body>
+</html>

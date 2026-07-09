@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    h2 { font-size: 30pt; font-weight: 800; letter-spacing: -0.01em; margin-top: 12pt; }
+    .items { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 18pt; max-width: 520pt; }
+    .item { display: flex; align-items: baseline; gap: 24pt; border-bottom: 1px solid #E5E7EB; padding-bottom: 14pt; }
+    .item:last-child { border-bottom: none; }
+    .num { font-size: 22pt; font-weight: 800; color: #4F46E5; width: 46pt; }
+    .item h3 { font-size: 17pt; font-weight: 700; }
+    .item p.d { font-size: 13pt; color: #6B7280; margin-left: auto; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <p class="eyebrow">CONTENTS</p>
+  <h2>오늘의 흐름</h2>
+  <div class="items">
+    <div class="item"><p class="num">01</p><h3>무엇인가</h3><p class="d">정의와 포지션</p></div>
+    <div class="item"><p class="num">02</p><h3>어떻게 동작하나</h3><p class="d">에이전트 루프와 도구</p></div>
+    <div class="item"><p class="num">03</p><h3>핵심 기능</h3><p class="d">메모리 · 확장 · 병렬 작업</p></div>
+    <div class="item"><p class="num">04</p><h3>시작하기</h3><p class="d">설치부터 첫 작업까지</p></div>
+  </div>
+  <p class="pagenum">02</p>
+</body>
+</html>

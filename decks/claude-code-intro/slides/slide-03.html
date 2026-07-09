@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #111827;
+      padding: 36pt 48pt 32pt;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { font-size: 10pt; font-weight: 700; letter-spacing: 2.5pt; color: #4F46E5; }
+    .statement { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    h2 { font-size: 40pt; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+    h2 .accent { color: #4F46E5; }
+    .sub { font-size: 15pt; color: #6B7280; margin-top: 14pt; line-height: 1.6; }
+    .points { display: flex; gap: 40pt; padding-top: 20pt; border-top: 1px solid #E5E7EB; }
+    .point { flex: 1; }
+    .point h3 { font-size: 13.5pt; font-weight: 700; margin-bottom: 4pt; }
+    .point p { font-size: 12.5pt; color: #6B7280; line-height: 1.5; }
+    .pagenum { position: absolute; right: 40pt; bottom: 24pt; font-size: 10pt; color: #9CA3AF; }
+  </style>
+</head>
+<body>
+  <p class="eyebrow">01 · 무엇인가</p>
+  <div class="statement">
+    <h2>채팅봇이 아니라,<br><span class="accent">에이전트</span>입니다</h2>
+    <p class="sub">답변을 주고 끝나지 않습니다. 코드베이스를 직접 읽고, 고치고, 실행해서 결과까지 확인합니다.</p>
+  </div>
+  <div class="points">
+    <div class="point">
+      <h3>Anthropic 공식 CLI</h3>
+      <p>터미널에서 바로 실행하는 공식 개발 도구</p>
+    </div>
+    <div class="point">
+      <h3>자연어로 지시</h3>
+      <p>"이 버그 고쳐줘" 한 문장이 작업 단위</p>
+    </div>
+    <div class="point">
+      <h3>검증까지 한 사이클</h3>
+      <p>파일 편집 → 명령 실행 → 테스트 통과 확인</p>
+    </div>
+  </div>
+  <p class="pagenum">03</p>
+</body>
+</html>
