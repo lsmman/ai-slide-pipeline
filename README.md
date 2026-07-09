@@ -2,97 +2,98 @@
 
 # slide-decks-start
 
-**A Claude Code skill that turns a file path or a one-line topic into a validated slide deck (PDF/PPTX).**
+**Give Claude Code a document or a topic. Get back a finished, quality-checked slide deck.**
 
 [English](README.md) · [한국어](README.ko.md)
 
 </div>
 
-```mermaid
-flowchart LR
-    A["📝 Plan<br/>outline + approval"] --> B["🎨 Design<br/>HTML slides + AI images"]
-    B --> C["🔍 Validate<br/>Playwright lint"]
-    C --> D{"🚦 Design Gate<br/>2 adversarial reviewers"}
-    D -- "blocker found" --> B
-    D -- "both PASS" --> E["📦 Export<br/>PDF · PPTX · viewer"]
-    E --> F["✏️ Edit loop<br/>fix slide N → re-gate"]
-    style D fill:#4F46E5,stroke:#312E81,color:#fff
-    style A fill:#F7F8FC,stroke:#C7CBF2,color:#111827
-    style B fill:#F7F8FC,stroke:#C7CBF2,color:#111827
-    style C fill:#F7F8FC,stroke:#C7CBF2,color:#111827
-    style E fill:#F7F8FC,stroke:#C7CBF2,color:#111827
-    style F fill:#F7F8FC,stroke:#C7CBF2,color:#111827
-```
-
 ```
 /slide-decks-start docs/onboarding.md
 ```
 
-Exports are **locked behind a design gate**: two reviewer subagents inspect every rendered
-slide (system-contract integrity + audience readability), and the PDF/PPTX commands refuse
-to run until both return PASS.
+One command produces the outline, designs every slide as HTML, generates images where
+they help, has the result reviewed, and hands you a PDF you can present.
 
-## Install
+## What it makes
+
+Every slide below was produced by this skill — no manual design work:
+
+| | | |
+|:---:|:---:|:---:|
+| ![cover](.github/previews/jspace-cover.png) | ![stats](.github/previews/jspace-stats.png) | ![table](.github/previews/jspace-table.png) |
+| ![cover](.github/previews/cci-cover.png) | ![loop](.github/previews/cci-loop.png) | ![tools](.github/previews/cci-tools.png) |
+
+*Top: executive-navy style (research briefing). Bottom: clean-white style with AI-generated images (product intro).
+Full sources in [examples/](examples/).*
+
+## Quick start
 
 ```bash
+# 1. install the skill (once)
 git clone https://github.com/lsmman/ai-slide-pipeline.git
 cp -r ai-slide-pipeline/skills/slide-decks-start ~/.claude/skills/
+npx playwright install chromium
+
+# 2. use it in any project, inside Claude Code
+/slide-decks-start docs/plan.md          # from a file
+/slide-decks-start "team onboarding"     # from just a topic
 ```
 
-That's it — Claude Code picks it up in any project.
+Plain requests work too: *"make a deck from this doc"*, *"이 문서로 PPT 만들어줘"*.
+You approve the outline once; the rest runs on its own. When it finishes you get a PDF,
+a browser viewer, and an edit loop — say *"fix slide 7"* and it re-renders and re-checks.
 
-### Requirements
+## How quality is enforced
+
+The skill doesn't trust its own first draft. Before anything is exported:
+
+1. **Lint** — every slide is rendered headlessly and checked for clipped text,
+   elements outside the frame, and broken layouts.
+2. **Design review** — two independent reviewer agents look at every rendered slide:
+   one checks the design system is followed (colors, type scale, consistency),
+   the other reads it like your audience would (legibility, Korean typography, 3-second scan).
+3. **The lock** — the export command literally refuses to run until both reviewers
+   sign off. Fix, re-render, re-review, then export unlocks.
+
+```mermaid
+flowchart LR
+    A["📝 Outline"] --> B["🎨 HTML slides<br/>+ AI images"]
+    B --> C["🔍 Lint"]
+    C --> D{"🚦 2-reviewer<br/>design gate"}
+    D -- "issues found" --> B
+    D -- "both approve" --> E["📦 PDF · PPTX · viewer"]
+    style D fill:#4F46E5,stroke:#312E81,color:#fff
+```
+
+## Why it's different
+
+- **Korean typography built in** — `word-break: keep-all`, minimum type sizes,
+  no mid-word line breaks. Rules learned from real review failures, applied from the first render
+- **Images that don't fight your text** — a [7-slot prompt template](skills/slide-decks-start/references/image-prompting.md)
+  reserves the text zone, fixes the palette by hex, and keeps every image in one visual style.
+  Uses your `codex login`; no API key. Skipped gracefully if unavailable
+- **Styles** — clean-white + indigo by default, a consulting-grade
+  [executive-navy](skills/slide-decks-start/styles/executive-navy.slides.md) spec included,
+  35 more selectable from the underlying engine
+- **Receipts, not vibes** — reviewer reports cite rendered PNGs and source checksums;
+  leftover nitpicks are tracked in a debt log instead of silently dropped
+
+## Reference
+
+<details>
+<summary><b>Requirements</b></summary>
 
 | Item | Used for | Required |
 |---|---|---|
 | Node 18+ | slides-grab CLI (`npx -y slides-grab`, no install) | ✅ |
-| Playwright Chromium | rendering & validation | ✅ `npx playwright install chromium` |
-| `codex login` | AI image generation (no API key) | optional — falls back to CSS backgrounds |
+| Playwright Chromium | rendering & validation | ✅ |
+| `codex login` | AI image generation (no API key) | optional |
 
-## Usage
+</details>
 
-```bash
-/slide-decks-start docs/plan.md        # a file into a deck
-/slide-decks-start "team onboarding"   # or just a topic
-```
-
-Natural-language triggers also work: *"make a deck from this doc"*, *"이 문서로 PPT 만들어줘"*.
-
-1. **Plan** — outline generated → user approval checkpoint
-2. **Design** — one self-contained HTML per slide (720×405pt, Pretendard), AI images where they earn their place
-3. **Validate** — Playwright lint: clipped text, frame overflow, empty canvases
-4. **Design Gate** — reviewer A (design-system contract) + reviewer B (audience readability, Korean typography) read every rendered PNG; evidence = PNG filenames + source sha256 fingerprints
-5. **Export** — PDF (primary), PPTX (experimental), browser viewer
-6. **Edit** — "fix slide 7" → edit → re-validate → re-gate → re-export
-
-## What's inside
-
-- **[SKILL.md](skills/slide-decks-start/SKILL.md)** — the pipeline procedure plus a
-  field-tested pitfall table (Korean `word-break: keep-all`, 10pt floor, flex-collapsed
-  decorations, hyphenated-token line breaks…) so the first render already avoids them
-- **[7-slot image prompting guide](skills/slide-decks-start/references/image-prompting.md)** —
-  MEDIUM · SUBJECT (metaphor) · COMPOSITION (**reserved text zone**) · COLOR (hex + ratios) ·
-  STYLE ANCHOR (deck-wide consistency) · RENDER · NEGATIVES. Backgrounds that never fight your headline
-- **[executive-navy style](skills/slide-decks-start/styles/executive-navy.slides.md)** —
-  consulting-report tone: navy + bronze, typography-driven, no images. Default style is
-  clean-white + indigo; slides-grab's 35 bundled styles are also selectable
-- **[MCP server](tools/slides-grab-mcp/server.js)** *(optional)* — exposes the slides-grab CLI
-  as 11 function-calling tools (`validate`, `design_gate`, `render_png`, `export_pdf`,
-  `generate_image`, …). Copy [.mcp.json](.mcp.json) + `npm install`. The skill works fine with CLI only
-
-## Examples
-
-| Deck | Style | Notes |
-|---|---|---|
-| [examples/j-space](examples/j-space) | executive-navy, image-free | 12-slide executive briefing on Anthropic's global-workspace research |
-| [examples/claude-code-intro](examples/claude-code-intro) | clean-white + 3 AI images | 12-slide Claude Code intro (image assets excluded — regenerate via the skill) |
-
-```bash
-npx slides-grab pdf --slides-dir examples/j-space/slides --output j-space.pdf
-npx slides-grab build-viewer --slides-dir examples/j-space/slides && open examples/j-space/slides/viewer.html
-```
-
-## Repository layout
+<details>
+<summary><b>Repository layout</b></summary>
 
 ```
 skills/slide-decks-start/
@@ -103,6 +104,33 @@ tools/slides-grab-mcp/              # (optional) MCP server
 examples/                           # two finished deck sources
 ```
 
-## License
+</details>
 
-MIT
+<details>
+<summary><b>Optional MCP server</b></summary>
+
+[tools/slides-grab-mcp](tools/slides-grab-mcp/server.js) exposes the CLI as 11
+function-calling tools (`validate`, `design_gate`, `render_png`, `export_pdf`,
+`generate_image`, …). Copy [.mcp.json](.mcp.json) and `npm install` to enable.
+The skill works fully with the CLI alone.
+
+</details>
+
+<details>
+<summary><b>Rebuild the examples</b></summary>
+
+```bash
+npx slides-grab build-viewer --slides-dir examples/j-space/slides
+open examples/j-space/slides/viewer.html
+```
+
+`claude-code-intro`'s image assets are excluded from the repo — regenerate them with the skill.
+
+</details>
+
+## Credits
+
+Built on [slides-grab](https://github.com/NomaDamas/slides-grab), the agent-first
+presentation framework that provides the CLI, validation, and the design-gate lock.
+
+MIT License
