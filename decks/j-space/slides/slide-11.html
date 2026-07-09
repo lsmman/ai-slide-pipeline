@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #0F172A;
+      padding: 34pt 52pt 30pt;
+      display: flex; flex-direction: column;
+    }
+    .headrule { height: 2pt; flex-shrink: 0; background: #10243E; margin-bottom: 14pt; }
+    .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 2pt; color: #64748B; }
+    h2 { font-size: 28pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8pt; padding-bottom: 7pt; }
+    h2 .u { border-bottom: 3pt solid #A67C37; padding-bottom: 2pt; }
+    .cols { flex: 1; display: flex; gap: 44pt; align-items: center; }
+    .half { flex: 1; }
+    .half .t { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 1.5pt; color: #64748B; margin-bottom: 6pt; }
+    .li { padding: 9pt 0; border-bottom: 1px solid #D8DEE6; }
+    .li:last-child { border-bottom: none; }
+    .li h4 { font-size: 13.5pt; font-weight: 700; margin-bottom: 2pt; }
+    .li p { font-size: 12.5pt; color: #64748B; line-height: 1.5; }
+    .foot { flex-shrink: 0; border-top: 1px solid #D8DEE6; margin-top: 14pt; padding-top: 9pt; display: flex; justify-content: space-between; }
+    .foot p { font-size: 10.5pt; color: #64748B; }
+    .foot p.pg { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="headrule"></div>
+  <p class="eyebrow">04 / 한계와 남은 질문</p>
+  <h2>읽는 도구는 아직 <span class="u">근사치</span>다</h2>
+  <div class="cols">
+    <div class="half">
+      <p class="t">연구 자체의 한계</p>
+      <div class="li"><h4>단일 토큰 해상도</h4><p>J-lens는 한 단어짜리 개념만 읽는다 — 전체 그림이 <span style="white-space:nowrap">아닐 수 있음</span></p></div>
+      <div class="li"><h4>진입 메커니즘 미해명</h4><p>무엇이 작업공간에 오를지 결정하는 규칙은 아직 모른다</p></div>
+      <div class="li"><h4>재현성 미확인</h4><p>다른 아키텍처·타사 모델에서도 같은 구조인지 검증 필요</p></div>
+    </div>
+    <div class="half">
+      <p class="t">커뮤니티 논점 (긱뉴스)</p>
+      <div class="li"><h4>의인화 마케팅 비판</h4><p>인간 의식과의 유사성 강조가 명확성보다 혼란을 키운다는 지적</p></div>
+      <div class="li"><h4>Reversal Curse 연결</h4><p>"A는 B" 학습이 "B는 A"를 보장 못하는 방향성 편향과의 관계</p></div>
+      <div class="li"><h4>'생각하는 척' 논쟁</h4><p>은닉 상태와 출력의 상관을 실제 사고로 볼 수 있는가</p></div>
+    </div>
+  </div>
+  <div class="foot"><p>출처: Anthropic 원문 한계 절 + news.hada.io 댓글</p><p class="pg">11</p></div>
+</body>
+</html>

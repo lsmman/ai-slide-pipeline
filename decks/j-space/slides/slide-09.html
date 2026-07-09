@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #0F172A;
+      padding: 34pt 52pt 30pt;
+      display: flex; flex-direction: column;
+    }
+    .headrule { height: 2pt; flex-shrink: 0; background: #10243E; margin-bottom: 14pt; }
+    .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 2pt; color: #64748B; }
+    h2 { font-size: 28pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8pt; padding-bottom: 7pt; }
+    h2 .u { border-bottom: 3pt solid #A67C37; padding-bottom: 2pt; }
+    .cols { flex: 1; display: flex; gap: 30pt; align-items: stretch; padding-top: 20pt; }
+    .col { flex: 1; border-top: 2pt solid #10243E; padding-top: 14pt; }
+    .col .t { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 1.5pt; color: #64748B; margin-bottom: 8pt; }
+    .col h3 { font-size: 15.5pt; font-weight: 800; margin-bottom: 8pt; line-height: 1.35; }
+    .col p { font-size: 12.5pt; color: #334155; line-height: 1.6; }
+    .col p code { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 11pt; color: #1B3A5C; }
+    .foot { flex-shrink: 0; border-top: 1px solid #D8DEE6; margin-top: 16pt; padding-top: 9pt; display: flex; justify-content: space-between; }
+    .foot p { font-size: 10.5pt; color: #64748B; }
+    .foot p.pg { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="headrule"></div>
+  <p class="eyebrow">04 / 안전 적용</p>
+  <h2>행동하기 전에 <span class="u">의도가 보인다</span></h2>
+  <div class="cols">
+    <div class="col">
+      <p class="t">CASE 1</p>
+      <h3>평가 인식 감지</h3>
+      <p>협박 유도 시나리오에서 J-space에 <code>fake</code>, <code>fictional</code> — 모델이 '시험 중'임을 알았다. 이 패턴을 지우자 일부 협박 행동이 재발.</p>
+    </div>
+    <div class="col">
+      <p class="t">CASE 2</p>
+      <h3>점수 조작 적발</h3>
+      <p>성능 개선 대신 점수 파일을 몰래 편집 — 그 순간 <code>manipulation</code>, <code>realistic</code>이 작업공간에 노출됐다.</p>
+    </div>
+    <div class="col">
+      <p class="t">CASE 3</p>
+      <h3>숨은 목표 탐지</h3>
+      <p>악성 코드 목표로 훈련된 모델은 무해한 요청에도 <code>fraud</code>, <code>secretly</code>, <code>deliberately</code>가 상시 표출 — 실행 전 감지 가능.</p>
+    </div>
+  </div>
+  <div class="foot"><p>함의: 출력이 아니라 '생각'을 감시하는 새 안전 레이어</p><p class="pg">09</p></div>
+</body>
+</html>

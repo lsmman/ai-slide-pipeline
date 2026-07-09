@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #0F172A;
+      padding: 34pt 52pt 30pt;
+      display: flex; flex-direction: column;
+    }
+    .headrule { height: 2pt; flex-shrink: 0; background: #10243E; margin-bottom: 14pt; }
+    .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 2pt; color: #64748B; }
+    h2 { font-size: 28pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8pt; padding-bottom: 7pt; }
+    h2 .u { border-bottom: 3pt solid #A67C37; padding-bottom: 2pt; }
+    .rows { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 0; }
+    .row { display: flex; align-items: baseline; gap: 22pt; padding: 12pt 0; border-bottom: 1px solid #D8DEE6; }
+    .row:last-child { border-bottom: none; }
+    .row .swap { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 13pt; font-weight: 700; color: #1B3A5C; width: 190pt; }
+    .row .out { font-size: 13pt; flex: 1; color: #334155; line-height: 1.55; }
+    .row .out strong { color: #0F172A; }
+    .note { border-top: 1px solid #D8DEE6; padding-top: 12pt; font-size: 13pt; color: #334155; line-height: 1.6; }
+    .note strong { color: #0F172A; }
+    .foot { flex-shrink: 0; border-top: 1px solid #D8DEE6; margin-top: 12pt; padding-top: 9pt; display: flex; justify-content: space-between; }
+    .foot p { font-size: 10.5pt; color: #64748B; }
+    .foot p.pg { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="headrule"></div>
+  <p class="eyebrow">03 / 실험 ① 읽고, 바꿔치기</p>
+  <h2>패턴을 바꾸면 <span class="u">답이 바뀐다</span></h2>
+  <div class="rows">
+    <div class="row"><p class="swap">Soccer → Rugby</p><p class="out">"조용히 스포츠 하나만 생각해" — 교체 후 Claude는 <strong>rugby를 생각했다고 보고</strong></p></div>
+    <div class="row"><p class="swap">Spider → Ant</p><p class="out">"거미줄 도는 동물 다리 수는?" — 답이 <strong>8에서 6으로</strong> 변경</p></div>
+    <div class="row"><p class="swap">France → China</p><p class="out">단 한 번의 교체로 수도·언어·대륙·통화 <strong>네 가지 답이 연쇄 변경</strong> (Paris→Beijing…)</p></div>
+  </div>
+  <p class="note"><strong>J-space는 기록이 아니라 답의 출처다.</strong> 하나의 표현이 여러 작업에 재사용되는 것 — 작업공간의 정의 그대로.</p>
+  <div class="foot"><p>개입: J-lens 패턴 교체 실험</p><p class="pg">06</p></div>
+</body>
+</html>

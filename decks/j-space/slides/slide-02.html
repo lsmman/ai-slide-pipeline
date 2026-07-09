@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #0F172A;
+      padding: 34pt 52pt 30pt;
+      display: flex; flex-direction: column;
+    }
+    .headrule { height: 2pt; flex-shrink: 0; background: #10243E; margin-bottom: 14pt; }
+    .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 2pt; color: #64748B; }
+    h2 { font-size: 28pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8pt; padding-bottom: 7pt; }
+    h2 .u { border-bottom: 3pt solid #A67C37; padding-bottom: 2pt; }
+    .items { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 15pt; max-width: 560pt; }
+    .item { display: flex; align-items: baseline; gap: 24pt; border-bottom: 1px solid #D8DEE6; padding-bottom: 12pt; }
+    .item:last-child { border-bottom: none; }
+    .num { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 15pt; font-weight: 700; color: #1B3A5C; width: 52pt; }
+    .item h3 { font-size: 16pt; font-weight: 700; }
+    .item p.d { font-size: 12.5pt; color: #64748B; margin-left: auto; }
+    .foot { flex-shrink: 0; border-top: 1px solid #D8DEE6; padding-top: 9pt; display: flex; justify-content: space-between; }
+    .foot p { font-size: 10.5pt; color: #64748B; }
+    .foot p.pg { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="headrule"></div>
+  <p class="eyebrow">CONTENTS</p>
+  <h2>브리핑 <span class="u">네 부분</span></h2>
+  <div class="items">
+    <div class="item"><p class="num">01 /</p><h3>연구 질문</h3><p class="d">의식 모델이 LLM에도 있는가</p></div>
+    <div class="item"><p class="num">02 /</p><h3>핵심 개념과 숫자</h3><p class="d">J-space · J-lens · 규모</p></div>
+    <div class="item"><p class="num">03 /</p><h3>세 가지 실험</h3><p class="d">읽기 · 지우기 · 우회 확인</p></div>
+    <div class="item"><p class="num">04 /</p><h3>안전 적용과 한계</h3><p class="d">의도 감지 · 의식 논쟁</p></div>
+  </div>
+  <div class="foot"><p>Anthropic, A Global Workspace in Language Models (2026)</p><p class="pg">02</p></div>
+</body>
+</html>

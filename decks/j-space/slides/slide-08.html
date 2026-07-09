@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 720pt; height: 405pt; position: relative;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      word-break: keep-all; text-wrap: pretty;
+      background: #FFFFFF; color: #0F172A;
+      padding: 34pt 52pt 30pt;
+      display: flex; flex-direction: column;
+    }
+    .headrule { height: 2pt; flex-shrink: 0; background: #10243E; margin-bottom: 14pt; }
+    .eyebrow { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 2pt; color: #64748B; }
+    h2 { font-size: 28pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8pt; padding-bottom: 7pt; }
+    h2 .u { border-bottom: 3pt solid #A67C37; padding-bottom: 2pt; }
+    .case { flex: 1; display: flex; align-items: center; gap: 40pt; }
+    .setup { width: 250pt; background: #F4F6F9; padding: 20pt 22pt; }
+    .setup .t { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 10.5pt; letter-spacing: 1.5pt; color: #64748B; margin-bottom: 8pt; }
+    .setup h3 { font-size: 16pt; font-weight: 800; margin-bottom: 8pt; }
+    .setup p { font-size: 12.5pt; color: #334155; line-height: 1.6; }
+    .results { flex: 1; }
+    .r { padding: 11pt 0; border-bottom: 1px solid #D8DEE6; }
+    .r:last-child { border-bottom: none; }
+    .r h4 { font-size: 13.5pt; font-weight: 700; margin-bottom: 3pt; }
+    .r p { font-size: 12.5pt; color: #64748B; line-height: 1.5; }
+    .foot { flex-shrink: 0; border-top: 1px solid #D8DEE6; margin-top: 14pt; padding-top: 9pt; display: flex; justify-content: space-between; }
+    .foot p { font-size: 10.5pt; color: #64748B; }
+    .foot p.pg { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="headrule"></div>
+  <p class="eyebrow">03 / 실험 ③ 우회 확인</p>
+  <h2>자동 처리는 작업공간을 <span class="u">안 탄다</span></h2>
+  <div class="case">
+    <div class="setup">
+      <p class="t">SETUP</p>
+      <h3>스페인어 문단 하나</h3>
+      <p>J-space의 "Spanish" 패턴을 "French"로 교체한 뒤, 같은 문단으로 <span style="white-space:nowrap">세 가지 작업을</span> 시켰다.</p>
+    </div>
+    <div class="results">
+      <div class="r"><h4>"이 문단 무슨 언어야?" — 바뀜</h4><p>French라고 답변. 판단 작업은 J-space를 읽는다</p></div>
+      <div class="r"><h4>"이 언어의 대표 작가는?" — 바뀜</h4><p>García Márquez → Victor Hugo. 연쇄 추론도 교체를 따라감</p></div>
+      <div class="r"><h4>"문단을 이어 써봐" — 안 바뀜</h4><p>여전히 스페인어로 이어 씀. 자동화된 언어 생성은 작업공간을 우회</p></div>
+    </div>
+  </div>
+  <div class="foot"><p>시사: 의식적 판단과 반사적 생성의 경로 분리</p><p class="pg">08</p></div>
+</body>
+</html>
